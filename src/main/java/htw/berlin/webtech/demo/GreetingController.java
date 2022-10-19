@@ -10,18 +10,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class GreetingController {
 
     @GetMapping("/greeting")
-    public String greeting(@RequestParam("name") String name, Model model) {
+    public String greeting(@RequestParam("name2") String name, Model model) {
         model.addAttribute("name", name);
         return "greeting";
     }
 
     @GetMapping("/")
-    public String base(@RequestParam("text") String name, Model model) {
+    public String base(@RequestParam("text2") String name, Model model) {
         model.addAttribute("name", name);
         return "greeting";
     }
 
-    @GetMapping("/product/id/{idpara}/details/41")
+    @GetMapping("/product/id/{idpara}/details/42")
     public String pathpara(@PathVariable String idpara, Model model) {
         model.addAttribute("name", idpara);
         return "greeting";
