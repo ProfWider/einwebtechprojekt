@@ -21,7 +21,7 @@ public class GreetingController {
         return "greeting";
     }
 
-    @GetMapping("/product/id/{idpara}/details/42")
+    @GetMapping("/product/id/{idpara}/details/41")
     public String pathpara(@PathVariable String idpara, Model model) {
         model.addAttribute("name", idpara);
         return "greeting";
